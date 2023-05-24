@@ -1,0 +1,5 @@
+<select class="form-select">
+    <% @classes.each do |classs| %>
+        <option value="<%= classs.attribute('href') %>"><%= classs.text %></option>
+    <% end %>
+</select>
